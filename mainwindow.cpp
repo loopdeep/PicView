@@ -28,6 +28,7 @@ MainWindow::MainWindow()
     m_aboutAct = nullptr;
 
     initWindow();
+    this->setWindowTitle("Pic View");
 }
 
 void MainWindow::initWindow()
@@ -40,11 +41,11 @@ void MainWindow::initWindow()
     m_helpMenu = new QMenu(this);
 
     // 填充菜单子节点
-    m_openAct = new QMenu(this);
-    m_exitAct = new QMenu(this);
+    m_openAct = new QAction(this);
+    m_exitAct = new QAction(this);
 
 
     QVBoxLayout *vlayout = new QVBoxLayout(this);
-
+    this->setWindowTitle("PIC VIEW");
 }
 
